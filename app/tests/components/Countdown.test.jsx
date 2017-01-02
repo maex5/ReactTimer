@@ -24,6 +24,7 @@ describe('Countdown', () => {
         done();
       }, 1001);
     });
+
     it('should stop at zero', (done) => {
       var countdown = TestUtils.renderIntoDocument(<Countdown/>);
       countdown.handleSetCountdown(1);
